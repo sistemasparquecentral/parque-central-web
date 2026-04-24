@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Central Ciudad Juárez | Portal Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#cbdfff', //azulclaro
+                            100: '#CE0F69',
+                            600: '#5F259F', // morado
+                            800: '#CE0F69', //rosa
+                            900: '#002C72', //azul
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.4)), 
+                        url('https://www.chihuahua.gob.mx/sites/default/atach2/noticias/imagen-destacada/2023-10/393243941_702780855212927_9160150202215003966_n.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Efecto parallax sutil */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <div class="bg-brand-900 text-white text-sm py-2 px-4 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <i class="fas fa-map-marker-alt mr-2"></i> Av. Tecnológico, Cd Juárez, Chih.
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://www.facebook.com/ParqueCentralJuarez/" target="_blank" class="hover:text-brand-100 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-brand-100 transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" class="hover:text-brand-100 transition"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                    PC
+                </div>
+                <h1 class="text-xl font-bold text-slate-900 tracking-tight">Parque Central <span class="text-brand-600">Juárez</span></h1>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#inicio" class="hover:text-brand-600 transition duration-300">Inicio</a>
+                <a href="#atracciones" class="hover:text-brand-600 transition duration-300">Atracciones</a>
+                <a href="#horarios" class="hover:text-brand-600 transition duration-300">Horarios y Ubicación</a>
+                <a href="#contacto" class="hover:text-brand-600 transition duration-300">Directorio</a>
+            </div>
+            
+            <a href="#contacto" class="hidden md:block border-2 border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white px-5 py-2 rounded-full text-sm font-bold transition duration-300">
+                Contáctanos
+            </a>
+
+            <button class="md:hidden text-2xl text-slate-700"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-bg h-[85vh] flex items-center justify-start px-4 md:px-12">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="max-w-2xl text-white">
+                <span class="uppercase tracking-widest text-brand-100 font-semibold text-sm mb-4 block">Ciudad Juárez, Chihuahua</span>
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Tu espacio de vida en el <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-100 to-white">desierto</span></h2>
+                <p class="text-lg md:text-xl mb-10 text-slate-200 font-light leading-relaxed">Naturaleza, recreación y cultura en el corazón de nuestra ciudad. Un espacio diseñado para la convivencia familiar.</p>
+                <a href="#atracciones" class="bg-brand-600 hover:bg-brand-800 text-white px-8 py-4 rounded-full text-sm font-bold transition transform hover:-translate-y-1 shadow-lg inline-block">
+                    Conoce las instalaciones
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="atracciones" class="py-24 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Instalaciones y Servicios</h2>
+            <div class="w-16 h-1 bg-brand-600 mx-auto rounded-full"></div>
+            <p class="mt-4 text-slate-500 max-w-2xl mx-auto">Disfruta de áreas recientemente renovadas y diseñadas para el bienestar de todos los ciudadanos.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 overflow-hidden transition duration-300 group">
+                <div class="h-48 bg-slate-50 flex items-center justify-center text-brand-600 text-5xl group-hover:bg-brand-50 transition">
+                    <i class="fas fa-water drop-shadow-sm"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">El Lago Artificial</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Disfruta de la vista panorámica, interactúa con la fauna local o simplemente relájate en los andadores perimetrales.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 overflow-hidden transition duration-300 group">
+                <div class="h-48 bg-slate-50 flex items-center justify-center text-brand-600 text-5xl group-hover:bg-brand-50 transition">
+                    <i class="fas fa-child drop-shadow-sm"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Áreas Infantiles</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Espacios recreativos con equipamiento moderno y superficies seguras para garantizar la diversión de los más pequeños.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl border border-slate-100 overflow-hidden transition duration-300 group">
+                <div class="h-48 bg-slate-50 flex items-center justify-center text-brand-600 text-5xl group-hover:bg-brand-50 transition">
+                    <i class="fas fa-running drop-shadow-sm"></i>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Deporte y Salud</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Pistas de atletismo de tartán, circuitos de calistenia y amplias áreas verdes destinadas al acondicionamiento físico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="horarios" class="bg-white border-t border-slate-200 py-24 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-900 mb-6">Planifica tu visita</h2>
+                <p class="text-slate-600 mb-8 leading-relaxed">El Parque Central es un espacio público de libre acceso. Te invitamos a conocer nuestros horarios de operación para que disfrutes al máximo tu estancia.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-brand-50 flex items-center justify-center text-brand-600 flex-shrink-0">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-slate-900">Horario de Operación</h4>
+                            <p class="text-slate-600 text-sm">Lunes a Domingo de 6:00 AM a 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-12 h-12 rounded-full bg-brand-50 flex items-center justify-center text-brand-600 flex-shrink-0">
+                            <i class="fas fa-ticket-alt text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-slate-900">Acceso</h4>
+                            <p class="text-slate-600 text-sm">Entrada libre y gratuita al público en general.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+                
+				<div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-bold text-slate-900 mb-4">Ubicación</h3>
+                <p class="mb-6 text-sm text-slate-600 leading-relaxed">Nos encontramos en una vía arterial principal, facilitando el acceso tanto por transporte público como privado.</p>
+                
+                <div class="w-full h-64 rounded-lg mb-6 overflow-hidden shadow-inner border border-slate-200 bg-slate-100">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Parque%20Central%20Ciudad%20Ju%C3%A1rez,%20Chihuahua&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mapa de ubicación del Parque Central">
+                    </iframe>
+                </div>
+
+                <a href="https://www.google.com/maps/place/Parque+Central+Ciudad+Ju%C3%A1rez/" target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-slate-900 hover:bg-slate-800 text-white py-3 rounded-lg font-semibold transition duration-300">
+                    Abrir en la app de Google Maps
+                </a>
+            </div>
+               
+
+                
+           
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-slate-900 text-slate-300 py-16 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12 border-b border-slate-800 pb-12">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+                    <div class="w-8 h-8 bg-brand-600 rounded mr-3 flex items-center justify-center text-sm">PC</div>
+                    Parque Central
+                </h2>
+                <p class="text-sm text-slate-400 leading-relaxed mb-6">Un oasis urbano dedicado a mejorar la calidad de vida, promover la cultura y fomentar el deporte en Ciudad Juárez.</p>
+            </div>
+            
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Enlaces Rápidos</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#inicio" class="hover:text-brand-500 transition">Inicio</a></li>
+                    <li><a href="#atracciones" class="hover:text-brand-500 transition">Instalaciones</a></li>
+                    <li><a href="#horarios" class="hover:text-brand-500 transition">Horarios y Ubicación</a></li>
+                    <li><a href="#" class="hover:text-brand-500 transition">Aviso de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-bold text-white mb-4">Contacto Institucional</h3>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-center"><i class="fas fa-map-marker-alt w-6 text-brand-500"></i> Av. Tecnológico, Cd Juárez</li>
+                    <li class="flex items-center"><i class="fas fa-envelope w-6 text-brand-500"></i> contacto@parquecentral.gob.mx</li>
+                    <li class="flex items-center"><i class="fas fa-phone w-6 text-brand-500"></i> (656) 9528597</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto text-center mt-8 text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2026 Parque Central de Ciudad Juárez. Todos los derechos reservados.</p>
+            <p class="mt-2 md:mt-0">Gobierno del Estado de Chihuahua</p>
+			
+        </div>
+    </footer>
+
+</body>
+</html>
